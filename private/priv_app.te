@@ -140,6 +140,7 @@ unix_socket_connect(priv_app, traced_producer, traced)
 # suppress denials for non-API accesses.
 dontaudit priv_app exec_type:file getattr;
 dontaudit priv_app device:dir read;
+dontaudit priv_app fs_bpf:dir search;
 dontaudit priv_app net_dns_prop:file read;
 dontaudit priv_app proc:file read;
 dontaudit priv_app proc_interrupts:file read;
@@ -149,6 +150,7 @@ dontaudit priv_app proc_version:file read;
 dontaudit priv_app sysfs:dir read;
 dontaudit priv_app sysfs_android_usb:file read;
 dontaudit priv_app wifi_prop:file read;
+dontaudit priv_app { wifi_prop exported_wifi_prop }:file read;
 
 # allow privileged apps to use UDP sockets provided by the system server but not
 # modify them other than to connect
