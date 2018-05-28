@@ -55,6 +55,7 @@ dalvik.vm.method-trace-file u:object_r:exported_dalvik_prop:s0 exact string
 dalvik.vm.method-trace-file-siz u:object_r:exported_dalvik_prop:s0 exact int
 dalvik.vm.method-trace-stream u:object_r:exported_dalvik_prop:s0 exact bool
 dalvik.vm.profilesystemserver u:object_r:exported_dalvik_prop:s0 exact bool
+dalvik.vm.profilebootimage u:object_r:exported_dalvik_prop:s0 exact bool
 dalvik.vm.stack-trace-dir u:object_r:exported_dalvik_prop:s0 exact string
 dalvik.vm.usejit u:object_r:exported_dalvik_prop:s0 exact bool
 dalvik.vm.usejitprofiles u:object_r:exported_dalvik_prop:s0 exact bool
@@ -291,6 +292,7 @@ ro.product.vendor.name u:object_r:exported_default_prop:s0 exact string
 ro.vendor.build.date u:object_r:exported_default_prop:s0 exact string
 ro.vendor.build.date.utc u:object_r:exported_default_prop:s0 exact int
 ro.vendor.build.fingerprint u:object_r:exported_default_prop:s0 exact string
+ro.vndk.lite u:object_r:exported_default_prop:s0 exact bool
 ro.vndk.version u:object_r:exported_default_prop:s0 exact string
 ro.vts.coverage u:object_r:exported_default_prop:s0 exact int
 wifi.direct.interface u:object_r:exported_default_prop:s0 exact string
