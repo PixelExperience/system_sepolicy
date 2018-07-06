@@ -257,6 +257,7 @@ neverallow {
   -healthd
   -uncrypt
   -tee
+  -update_engine
 } self:capability sys_rawio;
 
 # No process can map low memory (< CONFIG_LSM_MMAP_MIN_ADDR).
@@ -413,7 +414,7 @@ neverallow * exec_type:dir_file_class_set mounton;
 neverallow { domain -init } { system_file vendor_file_type }:dir_file_class_set mounton;
 
 # Nothing should be writing to files in the rootfs.
-neverallow { domain userdebug_or_eng(`-recovery -update_engine') } rootfs:file { create write setattr relabelto append unlink link rename };
+neverallow { domain userdebug_or_eng(`-recovery') -update_engine } rootfs:file { create write setattr relabelto append unlink link rename };
 neverallow { -update_engine } rootfs:file { create write setattr relabelto append unlink link rename };
 
 # Restrict context mounts to specific types marked with
