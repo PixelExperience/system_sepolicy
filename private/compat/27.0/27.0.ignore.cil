@@ -72,7 +72,11 @@
     perfetto_tmpfs
     perfetto_traces_data_file
     perfprofd_service
+    proc_cpu_alignment
+    proc_last_kmsg
+    proc_slabinfo
     property_info
+    sdcard_posix
     secure_element
     secure_element_device
     secure_element_service
@@ -89,6 +93,7 @@
     statsdw
     statsdw_socket
     storaged_data_file
+    sysfs_disk_stat
     system_boot_reason_prop
     system_update_service
     test_boot_reason_prop
