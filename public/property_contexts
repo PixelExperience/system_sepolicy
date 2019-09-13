@@ -323,3 +323,6 @@ ro.boot.revision u:object_r:exported2_default_prop:s0 exact string
 ro.bootmode u:object_r:exported2_default_prop:s0 exact string
 ro.build.type u:object_r:exported2_default_prop:s0 exact string
 sys.shutdown.requested u:object_r:exported_system_prop:s0 exact string
+
+# Dark bootanimation
+ro.boot.theme u:object_r:misc_writer_prop:s0 exact string
