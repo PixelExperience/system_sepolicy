@@ -384,6 +384,7 @@ compatible_property_only(`
     -logd_prop
     -logpersistd_logging_prop
     -lowpan_prop
+    -misc_writer_prop
     -mmc_prop
     -net_dns_prop
     -net_radio_prop
