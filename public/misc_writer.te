@@ -1,0 +1,19 @@
+# misc_writer
+type misc_writer, coredomain, domain;
+type misc_writer_exec, system_file_type, exec_type, file_type;
+type misc_writer_prop, property_type;
+
+# Raw writes to misc_block_device
+allow misc_writer misc_block_device:blk_file rw_file_perms;
+allow misc_writer block_device:dir r_dir_perms;
+
+# Silence the denial when calling libfstab's ReadDefaultFstab.
+dontaudit misc_writer proc_cmdline:file read;
+dontaudit misc_writer metadata_file:dir search;
+
+# Read files in /sys
+r_dir_file(misc_writer, sysfs_dt_firmware_android)
+
+# Boot prop
+get_prop(misc_writer, misc_writer_prop)
+set_prop(misc_writer, misc_writer_prop)

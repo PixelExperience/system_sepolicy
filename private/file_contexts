@@ -328,6 +328,10 @@
 /system/bin/notify_traceur\.sh       u:object_r:notify_traceur_exec:s0
 /system/bin/migrate_legacy_obb_data\.sh u:object_r:migrate_legacy_obb_data_exec:s0
 
+# Themed bootanimation
+/system/bin/misc_writer_system                           u:object_r:misc_writer_exec:s0
+/system/bin/themed_bootanimation                         u:object_r:misc_writer_exec:s0
+
 #############################
 # Vendor files
 #

@@ -436,6 +436,7 @@ compatible_property_only(`
     -logpersistd_logging_prop
     -lowpan_prop
     -lpdumpd_prop
+    -misc_writer_prop
     -mmc_prop
     -net_dns_prop
     -net_radio_prop

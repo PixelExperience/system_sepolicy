@@ -396,3 +396,6 @@ ro.surface_flinger.set_display_power_timer_ms u:object_r:exported_default_prop:s
 ro.surface_flinger.support_kernel_idle_timer u:object_r:exported_default_prop:s0 exact bool
 ro.surface_flinger.use_smart_90_for_video u:object_r:exported_default_prop:s0 exact bool
 ro.surface_flinger.color_space_agnostic_dataspace u:object_r:exported_default_prop:s0 exact int
+
+# Dark bootanimation
+ro.boot.theme u:object_r:misc_writer_prop:s0 exact string

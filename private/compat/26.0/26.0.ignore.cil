@@ -118,6 +118,10 @@
     mediaextractor_update_service
     mediaprovider_tmpfs
     metadata_file
+    misc_writer
+    misc_writer_exec
+    misc_writer_prop
+    misc_writer_tmpfs
     mnt_product_file
     mnt_vendor_file
     netd_stable_secret_prop
