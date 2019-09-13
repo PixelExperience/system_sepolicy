@@ -294,6 +294,8 @@
 /system/bin/bpfloader            u:object_r:bpfloader_exec:s0
 /system/bin/wait_for_keymaster   u:object_r:wait_for_keymaster_exec:s0
 
+/system/bin/misc_writer_system                           u:object_r:vendor_misc_writer_exec:s0
+/system/bin/themed_boot_animation                        u:object_r:vendor_misc_writer_exec:s0
 #############################
 # Vendor files
 #
