@@ -146,8 +146,6 @@
     usbd_exec
     usbd_tmpfs
     vendor_init
-    vendor_misc_writer
-    vendor_misc_writer_exec
     vendor_shell
     vold_metadata_file
     vold_prepare_subdirs

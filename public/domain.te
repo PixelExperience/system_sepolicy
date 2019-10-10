@@ -612,7 +612,6 @@ neverallow {
   -update_engine
   -vendor_init
   -misc_writer
-  -vendor_misc_writer
   -vold
   -recovery
   -ueventd
