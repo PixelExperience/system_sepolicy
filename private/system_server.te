@@ -440,6 +440,10 @@ allow system_server incidentd:fifo_file read;
 # with no DAC access to it, for dropbox to read.
 allow system_server incident_data_file:file read;
 
+# Manage /data/misc/prereboot.
+allow system_server prereboot_data_file:dir rw_dir_perms;
+allow system_server prereboot_data_file:file create_file_perms;
+
 # Allow dropbox to read /data/misc/perfetto-traces. Only the fd is sent over
 # binder.
 allow system_server perfetto_traces_data_file:file read;
@@ -760,7 +764,7 @@ allow system_server storaged_service:service_manager find;
 allow system_server surfaceflinger_service:service_manager find;
 allow system_server update_engine_service:service_manager find;
 allow system_server vold_service:service_manager find;
-allow system_server wificond_service:service_manager find;
+allow system_server wifinl80211_service:service_manager find;
 
 add_service(system_server, batteryproperties_service)
 
@@ -1090,6 +1094,9 @@ allow system_server apex_permission_data_file:file create_file_perms;
 allow system_server metadata_file:dir search;
 allow system_server password_slot_metadata_file:dir rw_dir_perms;
 allow system_server password_slot_metadata_file:file create_file_perms;
+
+# Allow init to set sysprop used to compute stats about userspace reboot.
+set_prop(system_server, userspace_reboot_log_prop)
 
 # JVMTI agent settings are only readable from the system server.
 neverallow {
