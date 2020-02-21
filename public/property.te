@@ -20,6 +20,8 @@ system_internal_prop(last_boot_reason_prop)
 system_internal_prop(netd_stable_secret_prop)
 system_internal_prop(pm_prop)
 system_internal_prop(userspace_reboot_log_prop)
+system_internal_prop(system_adbd_prop)
+system_internal_prop(adbd_prop)
 
 compatible_property_only(`
     # DO NOT ADD ANY PROPERTIES HERE
@@ -68,6 +70,7 @@ system_restricted_prop(bq_config_prop)
 system_restricted_prop(module_sdkextensions_prop)
 system_restricted_prop(nnapi_ext_deny_product_prop)
 system_restricted_prop(restorecon_prop)
+system_restricted_prop(socket_hook_prop)
 system_restricted_prop(system_boot_reason_prop)
 system_restricted_prop(system_jvmti_agent_prop)
 system_restricted_prop(userspace_reboot_exported_prop)
@@ -113,6 +116,7 @@ system_vendor_config_prop(exported3_default_prop)
 system_vendor_config_prop(userspace_reboot_config_prop)
 system_vendor_config_prop(vehicle_hal_prop)
 system_vendor_config_prop(vendor_security_patch_level_prop)
+system_vendor_config_prop(vendor_socket_hook_prop)
 system_vendor_config_prop(vndk_prop)
 system_vendor_config_prop(virtual_ab_prop)
 
@@ -563,4 +567,20 @@ neverallow {
   -system_server
 } {
   userspace_reboot_log_prop
+}:property_service set;
+
+neverallow {
+  # Only allow init and system_server to set system_adbd_prop
+  -init
+  -system_server
+} {
+  system_adbd_prop
+}:property_service set;
+
+neverallow {
+  # Only allow init and adbd to set adbd_prop
+  -init
+  -adbd
+} {
+  adbd_prop
 }:property_service set;

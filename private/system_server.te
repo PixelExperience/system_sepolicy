@@ -614,6 +614,7 @@ set_prop(system_server, overlay_prop)
 set_prop(system_server, exported_overlay_prop)
 set_prop(system_server, pm_prop)
 set_prop(system_server, exported_pm_prop)
+set_prop(system_server, socket_hook_prop)
 userdebug_or_eng(`set_prop(system_server, wifi_log_prop)')
 
 # ctl interface
@@ -852,8 +853,11 @@ allow system_server adbd:unix_stream_socket connectto;
 allow system_server adbd:fd use;
 allow system_server adbd:unix_stream_socket { getattr getopt ioctl read write shutdown };
 
-# Read persist.adb.wifi. properties
-get_prop(system_server, shell_prop)
+# Read service.adb.tls.port, persist.adb.wifi. properties
+get_prop(system_server, adbd_prop)
+
+# Set persist.adb.tls_server.enable property
+set_prop(system_server, system_adbd_prop)
 
 # Allow invoking tools like "timeout"
 allow system_server toolbox_exec:file rx_file_perms;
@@ -1148,3 +1152,6 @@ neverallow { domain -system_server -init }
 # system_server cannot use this access to read perf event data like process stacks.
 allow system_server self:perf_event { open write cpu kernel };
 neverallow system_server self:perf_event ~{ open write cpu kernel };
+
+# Do not allow any domain other than init or system server to set the property
+neverallow { domain -init -system_server } socket_hook_prop:property_service set;
