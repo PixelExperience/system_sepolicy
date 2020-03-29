@@ -7,13 +7,11 @@ genfscon proc /buddyinfo u:object_r:proc_buddyinfo:s0
 genfscon proc /cmdline u:object_r:proc_cmdline:s0
 genfscon proc /config.gz u:object_r:config_gz:s0
 genfscon proc /diskstats u:object_r:proc_diskstats:s0
-genfscon proc /device-tree/firmware/android u:object_r:proc_dt_firmware_android:s0
 genfscon proc /filesystems u:object_r:proc_filesystems:s0
 genfscon proc /interrupts u:object_r:proc_interrupts:s0
 genfscon proc /iomem u:object_r:proc_iomem:s0
 genfscon proc /keys u:object_r:proc_keys:s0
 genfscon proc /kmsg u:object_r:proc_kmsg:s0
-genfscon proc /last_kmsg u:object_r:proc_last_kmsg:s0
 genfscon proc /loadavg u:object_r:proc_loadavg:s0
 genfscon proc /meminfo u:object_r:proc_meminfo:s0
 genfscon proc /misc u:object_r:proc_misc:s0
@@ -24,7 +22,6 @@ genfscon proc /net/tcp u:object_r:proc_net_tcp_udp:s0
 genfscon proc /net/udp u:object_r:proc_net_tcp_udp:s0
 genfscon proc /net/xt_qtaguid/ctrl u:object_r:proc_qtaguid_ctrl:s0
 genfscon proc /net/xt_qtaguid/ u:object_r:proc_qtaguid_stat:s0
-genfscon proc /cpu/alignment u:object_r:proc_cpu_alignment:s0
 genfscon proc /cpuinfo u:object_r:proc_cpuinfo:s0
 genfscon proc /pagetypeinfo u:object_r:proc_pagetypeinfo:s0
 genfscon proc /pressure/cpu u:object_r:proc_pressure_cpu:s0

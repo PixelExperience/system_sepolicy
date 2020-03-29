@@ -319,7 +319,6 @@ allow init {
   proc_cmdline
   proc_diskstats
   proc_kmsg # Open /proc/kmsg for logd service.
-  proc_last_kmsg
   proc_meminfo
   proc_stat # Read /proc/stat for bootchart.
   proc_uptime
@@ -328,7 +327,6 @@ allow init {
 
 allow init {
   proc_abi
-  proc_cpu_alignment
   proc_dirty
   proc_hostname
   proc_hung_task
@@ -352,7 +350,6 @@ allow init {
 allow init {
   proc_cmdline
   proc_kmsg
-  proc_last_kmsg
   proc_net
   proc_qtaguid_stat
   proc_slabinfo
@@ -370,7 +367,6 @@ allow init {
 }:file w_file_perms;
 
 allow init {
-  proc_dt_firmware_android
   sysfs_dt_firmware_android
   sysfs_fs_ext4_features
 }:file r_file_perms;

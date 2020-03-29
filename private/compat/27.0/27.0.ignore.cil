@@ -123,9 +123,6 @@
     perfetto_tmpfs
     perfetto_traces_data_file
     perfprofd_service
-    proc_cpu_alignment
-    proc_dt_firmware_android
-    proc_last_kmsg
     property_info
     recovery_socket
     role_service
@@ -152,7 +149,6 @@
     storaged_data_file
     super_block_device
     staging_data_file
-    sysfs_disk_stat
     system_boot_reason_prop
     system_bootstrap_lib_file
     system_lmk_prop
