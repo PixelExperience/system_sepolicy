@@ -24,6 +24,9 @@ attribute fs_type;
 # All types used for context= mounts.
 attribute contextmount_type;
 
+# All types used for sdcard_posix context= mounts.
+attribute sdcard_posix_contextmount_type;
+
 # All types referencing a FUSE filesystem.
 # When mounting a new FUSE filesystem, the fscontext= option should be used to
 # set a domain-specific type with this attribute. See app_fusefs for an
