@@ -108,9 +108,6 @@
     password_slot_metadata_file
     permissionmgr_service
     postinstall_apex_mnt_dir
-    proc_cpu_alignment
-    proc_dt_firmware_android
-    proc_last_kmsg
     recovery_socket
     role_service
     rollback_service
@@ -128,7 +125,6 @@
     simpleperf_app_runner_exec
     su_tmpfs
     super_block_device
-    sysfs_disk_stat
     sysfs_fs_f2fs
     system_bootstrap_lib_file
     system_event_log_tags_file
