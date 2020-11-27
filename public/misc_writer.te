@@ -7,11 +7,11 @@ system_internal_prop(misc_writer_prop)
 allow misc_writer misc_block_device:blk_file rw_file_perms;
 allow misc_writer block_device:dir r_dir_perms;
 
-# Silence the denial when calling libfstab's ReadDefaultFstab, which tries to
-# load DT fstab.
-dontaudit misc_writer proc_cmdline:file read;
-dontaudit misc_writer metadata_file:dir search;
-dontaudit misc_writer sysfs_dt_firmware_android:dir search;
+# Others
+allow misc_writer proc_cmdline:file r_file_perms;
+allow misc_writer sysfs_dt_firmware_android:dir r_dir_perms;
+allow misc_writer sysfs_dt_firmware_android:file r_file_perms;
+allow misc_writer metadata_file:dir search;
 
 # Boot prop
 get_prop(misc_writer, misc_writer_prop)
