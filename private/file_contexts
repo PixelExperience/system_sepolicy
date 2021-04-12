@@ -736,7 +736,3 @@
 #############################
 # mount point for read-write product partitions
 /mnt/product(/.*)?          u:object_r:mnt_product_file:s0
-
-# Themed bootanimation
-/system/bin/misc_writer                           u:object_r:misc_writer_exec:s0
-/system/bin/themed_bootanimation                  u:object_r:misc_writer_exec:s0

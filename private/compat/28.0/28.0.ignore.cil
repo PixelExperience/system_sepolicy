@@ -99,9 +99,6 @@
     mediaswcodec_exec
     mediaswcodec_tmpfs
     metadata_bootstat_file
-    misc_writer
-    misc_writer_exec
-    misc_writer_prop
     mnt_product_file
     network_stack
     network_stack_service

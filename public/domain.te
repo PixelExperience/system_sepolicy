@@ -616,7 +616,6 @@ neverallow {
   -uncrypt
   -update_engine
   -vendor_init
-  -misc_writer
   -vendor_misc_writer
   -vold
   -recovery
@@ -956,7 +955,6 @@ full_treble_only(`
         -iorap_inode2filename_exec
         -netutils_wrapper_exec
         userdebug_or_eng(`-tcpdump_exec')
-        -misc_writer_exec
     }:file { entrypoint execute execute_no_trans };
 ')
 

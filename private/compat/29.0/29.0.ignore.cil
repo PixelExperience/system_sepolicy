@@ -82,9 +82,6 @@
     lmkd_prop
     media_variant_prop
     metadata_bootstat_file
-    misc_writer
-    misc_writer_exec
-    misc_writer_prop
     mnt_pass_through_file
     mock_ota_prop
     module_sdkextensions_prop
