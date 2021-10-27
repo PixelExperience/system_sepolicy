@@ -276,7 +276,9 @@ allow dumpstate hwservicemanager:hwservice_manager list;
 allow dumpstate devpts:chr_file rw_file_perms;
 
 # Read any system properties
-get_prop(dumpstate, property_type)
+get_prop(dumpstate, system_property_type)
+get_prop(dumpstate, vendor_property_type)
+get_prop(dumpstate, product_property_type)
 
 # Access to /data/media.
 # This should be removed if sdcardfs is modified to alter the secontext for its
