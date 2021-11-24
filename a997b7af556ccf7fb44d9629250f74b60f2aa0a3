@@ -33,6 +33,24 @@
       "message": "What is it trying to fix? Is storaged something in system or in vendor? ",
       "revId": "a997b7af556ccf7fb44d9629250f74b60f2aa0a3",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "678c509b_45b697cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2021-11-24T12:45:52Z",
+      "side": 1,
+      "message": "its been in picklist since like Pie\nFixes build error with https://github.com/PixelExperience-Devices/device_xiaomi_rosy/commit/54fecbc213fa9aad467c5c77f4013ea8944c490",
+      "parentUuid": "89b38dae_6df1ca27",
+      "revId": "a997b7af556ccf7fb44d9629250f74b60f2aa0a3",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
