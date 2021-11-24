@@ -16,6 +16,23 @@
       "message": "cherry-picked from eleven adapted for prebuilt api 31 as well ",
       "revId": "a997b7af556ccf7fb44d9629250f74b60f2aa0a3",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89b38dae_6df1ca27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000126
+      },
+      "writtenOn": "2021-11-24T02:39:14Z",
+      "side": 1,
+      "message": "What is it trying to fix? Is storaged something in system or in vendor? ",
+      "revId": "a997b7af556ccf7fb44d9629250f74b60f2aa0a3",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
