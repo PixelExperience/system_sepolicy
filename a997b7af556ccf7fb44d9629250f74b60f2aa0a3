@@ -51,6 +51,24 @@
       "parentUuid": "89b38dae_6df1ca27",
       "revId": "a997b7af556ccf7fb44d9629250f74b60f2aa0a3",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63c64b34_4ef43e33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000166
+      },
+      "writtenOn": "2021-12-06T17:44:40Z",
+      "side": 1,
+      "message": "Do you face a build error regarding the lack of this patch? We used to apply that on ultra legacy devices on past android versions",
+      "parentUuid": "678c509b_45b697cc",
+      "revId": "a997b7af556ccf7fb44d9629250f74b60f2aa0a3",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
