@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6095231_53a6dc91",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000606
+      },
+      "writtenOn": "2022-01-04T10:37:45Z",
+      "side": 1,
+      "message": "Use only as patch for some mediatek devices",
+      "revId": "ba125e6863560377d3277a60e06a4579ccc184db",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    }
+  ]
+}
