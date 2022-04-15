@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "69c5593d_023e9edf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000126
+      },
+      "writtenOn": "2022-04-15T17:02:44Z",
+      "side": 1,
+      "message": "Neverallow rules are hard rules. We do not touch them.",
+      "revId": "a51b7828aaa89c3b0962d4f5885d605d80bb63b6",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    }
+  ]
+}
