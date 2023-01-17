@@ -1071,6 +1071,9 @@ get_prop(system_server, adbd_prop)
 # Set persist.adb.tls_server.enable property
 set_prop(system_server, system_adbd_prop)
 
+# Set tethering properties
+set_prop(system_server, device_config_tethering_prop)
+
 # Allow invoking tools like "timeout"
 allow system_server toolbox_exec:file rx_file_perms;
 
